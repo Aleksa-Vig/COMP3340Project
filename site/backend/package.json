@@ -1,0 +1,23 @@
+{
+  "name": "funstuffserver",
+  "version": "1.0.0",
+  "description": "A fun server that serves fun stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "docker": "docker run -p 8080:8080 fun-stuff-backend",
+    "compile-docker": "docker build --tag fun-stuff-backend ."
+  },
+  "keywords": [
+    "fun",
+    "stuff"
+  ],
+  "author": "Aaron Collins",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}

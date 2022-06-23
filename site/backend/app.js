@@ -1,5 +1,8 @@
 const express = require("express");
 const app = express();
+const cors = require('cors');
+
+app.use(cors())
 
 app.post("/post", (req, res) => {
     console.log("Connection made. Redirecting to React");
@@ -7,8 +10,7 @@ app.post("/post", (req, res) => {
 });
 
 app.post("/api", (req, res) => {
-    res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify({ resp: "test" }));
+    res.json({resp: "Test"});
 });
 
 const PORT = process.env.PORT || 8080;

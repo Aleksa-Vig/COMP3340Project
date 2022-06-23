@@ -54,7 +54,7 @@ printf "Currently at:"
 printYellow $PWD
 echo ""
 
-printGreen "Running front-end: "
+printGreen "Running front-end (production): "
 printYellow "npm run start-server\n"
 npm run start-server
 

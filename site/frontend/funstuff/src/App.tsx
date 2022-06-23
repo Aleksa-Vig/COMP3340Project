@@ -17,7 +17,7 @@ function App() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title: "React POST Request Example" }),
     };
-    fetch("../../api", requestOptions)
+    fetch(process.env.REACT_APP_API_ADDRESS as string, requestOptions)
       .then((resp) => resp.json())
       .then((data: responseType) => setResponse({ resp: data.resp + " " +  (response.resp ? response.resp : "")}));
   }

@@ -22,7 +22,7 @@ Description=My super nodejs app
 WorkingDirectory=/home/funstuff123/project/COMP3340Project/site/backend
 
 # start the server file (file is relative to WorkingDirectory here)
-ExecStart=/home/funstuff123/.nvm/versions/node/v16.15.1/bin/node app.js
+ExecStart=/home/funstuff123/.nvm/versions/node/v16.15.1/bin/node .
 
 # if process crashes, always try to restart
 Restart=always

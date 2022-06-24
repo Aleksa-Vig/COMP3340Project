@@ -20,9 +20,9 @@ printYellow () {
 # Functions to print colors
 
 # Intro
-printf "This program will run npm start in the "
+printf "This program will run 'npm run start-server' in the "
 printYellow "/frontend/funstuff"
-printf " and the "
+printf " and 'npm start' in "
 printYellow "/backend"
 echo " directories"
 

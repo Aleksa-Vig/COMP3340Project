@@ -22,7 +22,7 @@ Description=My super nodejs app
 WorkingDirectory=/home/funstuff123/project/COMP3340Project/site/backend
 
 # start the server file (file is relative to WorkingDirectory here)
-ExecStart=/home/funstuff123/.nvm/versions/node/v16.15.1/bin/node .
+ExecStart=/home/funstuff123/.nvm/versions/node/v16.15.1/bin/node dist/app.js
 
 # if process crashes, always try to restart
 Restart=always
@@ -64,8 +64,8 @@ ExecStart=/home/funstuff123/.nvm/versions/node/v16.15.1/bin/serve -s build
 # if process crashes, always try to restart
 Restart=always
 
-# let 2000ms between the crash and the restart
-RestartSec=2000ms
+# let 500ms between the crash and the restart
+RestartSec=500ms
 
 # send log tot syslog here (it doesn't compete with other log config in the app itself)
 StandardOutput=syslog

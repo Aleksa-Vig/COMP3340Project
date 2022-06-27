@@ -16,7 +16,7 @@ app.post("/post", (req: any, res: any) => {
 });
 
 app.post("/api", (req: any, res: any) => {
-    res.json({resp: "Test"});
+    res.json({resp: "This is a test -A"});
 });
 
 const PORT = process.env.PORT || 8080;

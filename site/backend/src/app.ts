@@ -22,3 +22,4 @@ app.post("/api", (req: any, res: any) => {
 const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => log.debug(`Server started on port ${PORT}`));
+

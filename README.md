@@ -1,3 +1,5 @@
+# NOTE this repo has been deprecated: new repo here https://github.com/aaron777collins/COMP3340Project
+
 # COMP3057project
 
 This project has 2 npm projects:
